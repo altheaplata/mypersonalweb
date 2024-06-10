@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+
+:root {
+  --dark: #021024;
+  --sky: #7da0ca;
+  --blue: #052659;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+  transition: all 200ms;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  padding-top: 100px;
+}
+
+header {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.name {
+  color: white;
+  font-size: 1.2rem;
+}
+.name span {
+  color: white;
+}
+
+.name:hover {
+  text-shadow: 0px 0px 30px white;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1.5em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.me {
+  height: calc(100vh - 100px);
+  background-color: var(--sky);
+  display: flex;
+  justify-content: center;
+}
+
+.image,
+.content {
+  flex: 1;
+}
+.image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1em;
+}
+
+.me .image {
+  flex: 0.8;
+}
+.image img {
+  height: 60%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 5%;
+  padding-left: 1em;
+}
+.intro {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+}
+.intro:after {
+  content: "";
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.scpecialization {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.desc {
+  font-size: 1.1rem;
+}
+.buttons button {
+  font-size: 1.4rem;
+  padding: 0.3em 1em;
+  border-radius: 0.4em;
+  border: none;
+  margin-top: 1em;
+  background-color: var(--dark);
+}
+.buttons button:hover {
+  background-color: var(--blue);
+}
+.buttons button:last-child {
+  background-color: var(--blue);
+}
+.buttons button:last-child:hover {
+  background-color: var(--dark);
+}
+.buttons button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* about page */
+.about .image {
+  display: grid;
+  place-items: center;
+}
+.about .image .image-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+}
+
+.about .image .image-wrapper img {
+  height: 35%;
+  aspect-ratio: 4 / 4;
+  border-radius: 1em;
+}
+.about {
+  height: 100vh;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.about .image {
+  justify-content: flex-start;
+}
+
+.about .content {
+  align-items: flex-end;
+  padding: 0;
+  padding-left: 20%;
+  padding-right: 1em;
+}
+.about h1 {
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  margin-bottom: 1em;
+  color: white;
+}
+.abt-desc {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.about .buttons {
+  width: 100%;
+}
+.about .buttons button:first-child {
+  background-color: var(--sky);
+}
+.about .buttons button:first-child:hover {
+  background-color: var(--blue);
+}
+.about .buttons button:last-child:hover {
+  background-color: var(--sky);
+}
+
+/* project */
+.project {
+  height: 100vh;
+  background-color: var(--sky);
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+.project .content {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  place-items: center;
+}
+
+.project-intro {
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+}
+.project-title {
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+}
+.project-desc {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* contact */
+.contact {
+  height: 120px;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+}
+.contact-text {
+  font-size: 2rem;
+  color: white;
+}
+.contacts {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+.contacts li {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+  gap: 1em;
+}
+.contacts li a {
+  text-decoration: none;
+  color: white;
+}
